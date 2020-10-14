@@ -10,7 +10,7 @@ if len(sys.argv) == 4:
     remote_path = sys.argv[2]
     url = sys.argv[3]
 else:
-    print (f"Usage: {sys.argv[0]} File2Upload RemotePath TargetUrl")
+    print(f"Usage: python3 {sys.argv[0]} File2Upload RemotePath TargetUrl")
     exit(1)
 print(f"\nFile to upload: {local_file}")
 print(f"Remote path to upload: {remote_path}")
@@ -27,6 +27,3 @@ if str(local_file) in r.text:
 else:
     print("Something has gone wrong...")
     exit(1)
-
-    
-
